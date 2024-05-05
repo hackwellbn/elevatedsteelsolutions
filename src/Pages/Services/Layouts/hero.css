@@ -1,0 +1,31 @@
+
+.hero {
+    /* background-image: url('../../../assets/banner2.jpg'); 
+     */
+     background-color: #f68;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .hero-section h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .counts {
+    margin-top: 50px;
+  }
+  
+  .counts p {
+    font-size: 29px;
+    margin-bottom: 10px;
+  }
+  
+  .counts span {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  

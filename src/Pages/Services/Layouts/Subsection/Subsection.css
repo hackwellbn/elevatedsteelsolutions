@@ -1,0 +1,93 @@
+
+.choice-perspect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .slide-perspect {
+    top: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transform: scale(0.8);
+  
+  
+  }
+  
+  .slide-perspect:hover {
+      transform: scale(0.8);
+      transition: 0.5s;
+    }
+  
+  .slide-perspect img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+  }
+  @media  screen and (max-width: 768px) {
+      .slide {
+          top: 0;
+          bottom: 0;
+          background-size: cover;
+          background-position: center;
+          position: relative;
+          overflow: hidden;
+          border-radius: 10px;
+          transform: translate(0);
+  
+        }
+      
+  .slide-perspect:hover {
+      transition: 0.5s;
+    }
+  
+  }
+  
+  
+  .slide-perspect .text_1 {
+    opacity: 0;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: linear-gradient(
+      to bottom, 
+      hsla(248, 55%, 19%, 0.1) 0%,
+      hsla(236, 94%, 49%, 0.5) 30%,
+      hsla(236, 94%, 49%, 0.9) 90%
+    );
+    color: #fff;
+    text-align: center;
+  }
+  .slide-perspect .text_1:hover {
+    opacity: 1;
+    top: 50%;
+    transition: 0.7s;
+    cursor: pointer;
+    font-size: 25px;
+    animation: movesupwards 0.5s linear forwards;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+  
+  @keyframes movesupwards {
+    25% {
+      transform: translateY(-10%);
+    }
+    75% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

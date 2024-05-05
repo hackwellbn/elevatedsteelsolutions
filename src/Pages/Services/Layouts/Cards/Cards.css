@@ -1,0 +1,22 @@
+.head-text{
+    text-align: center;
+}
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 15px;
+    padding-bottom: 10px;
+
+}
+.cards-content{
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.unordered{
+    list-style: none;
+}

@@ -1,0 +1,25 @@
+.categories-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.categories-content{
+    flex-grow: 1;
+    flex-basis: 200px;
+    background-color: #f68;
+}
+#cat-bg{
+    background-color: #f98;
+}
+ .categories-body{
+    text-align: center;
+    line-height: 1.6;
+    color: var(--quaternary-color);
+
+}
+.bg-1{
+    color: var(--secondary-color);
+
+}
+.categories-body{
+    padding: 20px;
+}
