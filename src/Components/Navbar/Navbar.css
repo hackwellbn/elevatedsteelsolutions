@@ -1,5 +1,4 @@
 /* Navbar */
-
 .navbar {
   width: 100%;
   background: rgba(0, 0, 0, 0.9);
@@ -8,15 +7,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  
 }
 
-.ess{
+.ess {
   color: #fdd;
   padding: 20px;
   font-size: 20px;
-
 }
 
 .navbar-container {
@@ -118,19 +114,30 @@
   .sidebar ul li a:hover {
     color: #b5929d;
   }
+
+  .close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 
 /* Styles for large screens */
 @media screen and (min-width: 769px) {
   .sidebar ul {
-    display: flex; 
+    display: flex;
     align-items: center;
     padding: 0;
     font-size: 20px;
   }
-.menu{
-  display: none;
-}
+
+  .menu {
+    display: none;
+  }
+
   .sidebar ul li {
     padding: 0 20px; /* Add padding between items */
   }

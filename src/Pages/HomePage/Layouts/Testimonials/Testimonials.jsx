@@ -53,7 +53,7 @@ const Testimonials = () => {
             quality and efficiency makes them our go-to partner for complex
             projects."
           </p>
-          <FontIcons icons={icons} />
+          {/* <FontIcons icons={icons} /> */}
         </div>
         <div className="Testimonials-content">
           <div className="Testimonials-images">
@@ -74,7 +74,7 @@ const Testimonials = () => {
             unique aesthetic appeal to our structures. It's a pleasure to work
             with a team that thinks outside the box."
           </p>
-          <FontIcons icons={icons} />{" "}
+          {/* <FontIcons icons={icons} />{" "} */}
         </div>
         <div className="Testimonials-content">
           <div className="Testimonials-images">

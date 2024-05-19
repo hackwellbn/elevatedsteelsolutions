@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import vid_one from '../../../../assets/AdobeStock_486880917_Video_HD_Preview (online-video-cutter.com).mp4'
+import vid_one from "../../../../assets/vid.mp4";
 const about = () => {
   return (
     <div>
@@ -22,11 +22,13 @@ const about = () => {
               sustainability and safety, we're not just providers; we're your
               dependable welding partners.
             </p>
-            <button className="btn"><a href="/contact">Hit us up!</a></button>
+            <button className="btn">
+              <a href="/contact">Hit us up!</a>
+            </button>
           </div>
           <div className="about-content">
             <video autoPlay loop>
-                <source src={vid_one} type="video/mp4" />
+              <source src={vid_one} type="video/mp4" />
             </video>
           </div>
         </div>

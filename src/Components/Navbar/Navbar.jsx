@@ -16,6 +16,9 @@ const Navbar = () => {
           <span className={`menu ${sidebarOpen ? "open" : ""}`}></span>
         </div>
         <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
+          <span className="close-icon" onClick={toggleSidebar}>
+            &#10005;
+          </span>
           <ul>
             <li>
               <Link to="/">Home</Link>
@@ -24,7 +27,7 @@ const Navbar = () => {
               <a href="/#Testimonials">Testimonials</a>
             </li>
             <li>
-              <a href="/services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li>
               <Link to="/Blogs">Blogs</Link>
@@ -33,7 +36,6 @@ const Navbar = () => {
               <Link to="/Gallery">Gallery</Link>
             </li>
           </ul>
-          <ul></ul>
         </div>
       </div>
       <span className="ess">E.S.S</span>

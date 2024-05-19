@@ -32,3 +32,7 @@
 .carousel-control-next {
   right: 0;
 }
+.carousel-image {
+  height: 40vw;
+  object-fit: cover;
+}

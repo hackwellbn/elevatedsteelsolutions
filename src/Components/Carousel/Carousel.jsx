@@ -1,14 +1,9 @@
-// Carousel.jsx
 import React from "react";
 import "./Carousel.css";
 
 const Carousel = ({ images }) => {
   return (
-    <div
-      id="carouselExampleCaptions"
-      className="carousel slide"
-      data-bs-ride="carousel"
-    >
+    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-indicators">
         {images.map((_, index) => (
           <button
@@ -23,11 +18,12 @@ const Carousel = ({ images }) => {
       </div>
       <div className="carousel-inner">
         {images.map((image, index) => (
-          <div
-            key={index}
-            className={`carousel-item ${index === 0 ? "active" : ""}`}
-          >
-            <img src={image.src} className="d-block w-100" alt={image.alt} />
+          <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
+            <img 
+              src={image.src} 
+              className="d-block w-100 carousel-image" 
+              alt={image.alt} 
+            />
             <div className="carousel-caption d-none d-md-block">
               <h5>{image.caption}</h5>
               <p>{image.description}</p>

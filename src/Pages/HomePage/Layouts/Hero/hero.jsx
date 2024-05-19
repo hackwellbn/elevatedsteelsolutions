@@ -1,5 +1,7 @@
 import React from "react";
 import hero_image from "../../../../assets/manu_image.webp";
+import { Link } from "react-router-dom";
+
 import "./Hero.css";
 
 const hero = () => {
@@ -9,7 +11,11 @@ const hero = () => {
         <div className="hero-text">
           <h1 id="hdtext">welcome to elevated steel solutions</h1>
           <h2 id="mintext">Your partner in welding solutions</h2>
-          <a href="/contact" className="btn">Contact Us</a>
+          <div className="btn-container">
+          <Link to="/contact" className="btn">Contact Us</Link>
+          <Link to="/Authform" className="btn sign-up">sign up</Link>
+          </div>
+          
         </div>
       </div>
       <div className="content">

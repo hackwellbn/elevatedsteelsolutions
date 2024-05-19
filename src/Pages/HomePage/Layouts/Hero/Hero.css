@@ -24,6 +24,11 @@
 .hero-image img{
     width: 100%;
 }
+.btn-container{
+    display: flex;
+    gap: 15px;
+}
+
 .btn{
     /* background-color: #f98 !important; */
     color: white;

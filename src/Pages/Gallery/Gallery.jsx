@@ -1,88 +1,94 @@
 import React from "react";
-import "./Gallery.css"; // Import your CSS file for styling
-import image1 from "../../assets/manu2.jpg"; // Import images from the assets folder
-import image2 from "../../assets/manu2.jpg";
-import image3 from "../../assets/manu2.jpg";
-// Import other images as needed
+import { Link } from "react-router-dom";
+import "./Gallery.css";
+import bed1 from "../../assets/bed.jpg";
+import bed2 from "../../assets/bed2.jpg";
+import chair1 from "../../assets/chair.jpg";
+import chair2 from "../../assets/chair2.jpg";
+import chair3 from "../../assets/chair3.jpg";
+import chair4 from "../../assets/chair4.jpg";
+import table1 from "../../assets/table1.jpg";
+import table2 from "../../assets/table2.jpg";
+import Gate1 from "../../assets/gate1.jpg";
+import Gate2 from "../../assets/gate2.jpg";
+import Gate3 from "../../assets/gate3.jpg";
 
 const Gallery = () => {
-  // Array of imported image paths
-  const images = [image1, image2, image3]; // Add more images as needed
+  const beds = [bed1, bed2];
+  const chairs = [chair1, chair2, chair3, chair4];
+  const tables = [table1, table2];
+  const gates = [Gate1, Gate2, Gate3]; // Corrected variable name
 
   return (
     <div className="gallery-container">
       <h2 className="gallery-title">Gallery</h2>
 
       <div className="card-gallery">
-        {images.map((image, index) => (
+        {beds.map((image, index) => (
           <div key={index} className="card">
-            <img
-              src={image}
-              alt={`Image ${index + 1}`}
-              className="card-image"
-            />
+            <Link to="/gallery/beds">
+              <img
+                src={image}
+                alt={`Bed ${index + 1}`}
+                className="card-image"
+              />
+            </Link>
             <div className="card-overlay">
-              <a href="/Gallery/beds">
-                {" "}
-                <h3>Diy {index + 1}</h3>
-              </a>
+              <h3>Bed {index + 1}</h3>
             </div>
           </div>
         ))}
-        <div className="description">
-          <a href="/Gallery/Beds">see more</a>
-        </div>
       </div>
+
       <div className="card-gallery">
-        {images.map((image, index) => (
+        {chairs.map((image, index) => (
           <div key={index} className="card">
-            <img
-              src={image}
-              alt={`Image ${index + 1}`}
-              className="card-image"
-            />
+            <Link to="/gallery/chairs">
+              <img
+                src={image}
+                alt={`Chair ${index + 1}`}
+                className="card-image"
+              />
+            </Link>
             <div className="card-overlay">
-              <h3>beds {index + 1}</h3>
+              <h3>Chair {index + 1}</h3>
             </div>
           </div>
         ))}
-        <div className="description">
-          <a href="/Gallery/Beds">see more</a>
-        </div>
       </div>
+
       <div className="card-gallery">
-        {images.map((image, index) => (
+        {tables.map((image, index) => (
           <div key={index} className="card">
-            <img
-              src={image}
-              alt={`Image ${index + 1}`}
-              className="card-image"
-            />
+            <Link to="/gallery/tables">
+              <img
+                src={image}
+                alt={`Table ${index + 1}`}
+                className="card-image"
+              />
+            </Link>
             <div className="card-overlay">
-              <h3>chairs {index + 1}</h3>
+              <h3>Table {index + 1}</h3>
             </div>
           </div>
         ))}
-        <div className="description">
-          <a href="/Gallery/Beds">see more</a>
-        </div>
       </div>
+
       <div className="card-gallery">
-        {images.map((image, index) => (
+        {gates.map((image, index) => (
           <div key={index} className="card">
-            <img
-              src={image}
-              alt={`Image ${index + 1}`}
-              className="card-image"
-            />
+            <Link to="/gallery/gates">
+              <img
+                src={image}
+                alt={`Gate ${index + 1}`}
+                className="card-image"
+              />
+            </Link>
             <div className="card-overlay">
-              <h3>Tables {index + 1}</h3>
+              <h3>Gate {index + 1}</h3>
             </div>
           </div>
         ))}
-        <div className="description">
-          <a href="/Gallery/Beds">see more</a>
-        </div>
       </div>
     </div>
   );

@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <div className="hero">
       <section className="hero-section">
-        <h3>Versatile Welding Services for Any Application</h3>
+        <h3>we have made  great impacts to our esteemed customers</h3>
       </section>
       <section className="counts overall">
         <p>clients we have worked with</p>
