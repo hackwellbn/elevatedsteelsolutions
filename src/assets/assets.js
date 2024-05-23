@@ -66,7 +66,7 @@ export const partnerships = [
   },
   // Add more partnerships as needed
 ];
-const teamMembers = [
+export const teamMembers = [
   {
     name: "John Doe",
     role: "CEO",
