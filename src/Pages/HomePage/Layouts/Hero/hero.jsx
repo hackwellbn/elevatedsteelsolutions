@@ -9,11 +9,11 @@ const hero = () => {
     <div className="hero-container">
       <div className="content">
         <div className="hero-text">
-          <h1 id="hdtext">welcome to elevated steel solutions</h1>
-          <h2 id="mintext">Your partner in welding solutions</h2>
+          <h1>welcome to elevated steel solutions</h1>
+          <h2>Your partner in welding solutions</h2>
           <div className="btn-container">
           <Link to="/contact" className="btn">Contact Us</Link>
-          <Link to="/Authform" className="btn sign-up">sign up</Link>
+          <Link to="/services/:capabilities" className="btn sign-up">Capabilites</Link>
           </div>
           
         </div>
