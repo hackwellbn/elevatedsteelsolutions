@@ -68,12 +68,12 @@ export const partnerships = [
 ];
 export const teamMembers = [
   {
-    name: "John Doe",
+    name: "Immanuel Okoth",
     role: "CEO",
     image: "path/to/john-doe-image.jpg",
   },
   {
-    name: "Jane Smith",
+    name: "Jane AUs",
     role: "CTO",
     image: "path/to/jane-smith-image.jpg",
   },
