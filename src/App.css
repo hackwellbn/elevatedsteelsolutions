@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 :root {
   --white-background: #ffffff; /* White Background Color */
   --primary-color: #333333; /* Primary Color */
@@ -20,32 +20,54 @@
 }
 
 .footer {
-  /* background-color: var(--tertiary-color); */  
+  /* background-color: var(--tertiary-color); */
   background-color: var(--most-used-color);
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .button {
   background-color: var(--quaternary-color);
   color: #f98;
 }
-a{
+a {
   text-decoration: none;
   color: #ede4e4;
 }
 
-*{
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Outfit", sans-serif;
   scroll-behavior: auto;
-
 }
 
-p{
-font-size: var(--paragraph-font-size);
+p {
+  font-size: var(--paragraph-font-size);
 }
-.btn{
+.btn {
   font-size: 20px !important;
+}
+
+@keyframes slidein {
+  0%,
+  50% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes appearance {
+  from {
+    opacity: 0;
+    scale: 0.8;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
 }

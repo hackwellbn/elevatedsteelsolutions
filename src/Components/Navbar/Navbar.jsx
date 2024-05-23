@@ -1,16 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${isFixed ? "fixed" : ""}`}>
       <div className="navbar-container">
         <div className="navbar-toggle" onClick={toggleSidebar}>
           <span className={`menu ${sidebarOpen ? "open" : ""}`}></span>
@@ -35,7 +51,6 @@ const Navbar = () => {
             <li>
               <Link to="/Gallery">Gallery</Link>
             </li>
-           
           </ul>
         </div>
       </div>

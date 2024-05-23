@@ -51,25 +51,25 @@ const Choice = () => {
         </div>
       </div>
       <div className="sits-container">
-        <div className="sits-content">
-          <img src={sit_1} alt="sit_1" />
-          <div className="overlay-text">
-            <p className="overlay">leading producer in expert solutions</p>
-          </div>
-        </div>
-        <div className="sits-content">
-          <img src={sit_2} alt="" />
-          <div className="overlay-text">
-            <p className="overlay">these comfortable seats that bring </p>
-          </div>
-        </div>
-        <div className="sits-content">
-          <img src={sit_3} alt="" />
-          <div className="overlay-text">
-            <p className="overlay">do not hesitate to bring us </p>
-          </div>
+      <div className="sits-content">
+        <img src={sit_1} alt="High-quality seating solution" />
+        <div className="overlay-text">
+          <p className="overlay">Leading producer in expert seating solutions</p>
         </div>
       </div>
+      <div className="sits-content">
+        <img src={sit_2} alt="Comfortable seats" />
+        <div className="overlay-text">
+          <p className="overlay">Comfortable seats that enhance your space</p>
+        </div>
+      </div>
+      <div className="sits-content">
+        <img src={sit_3} alt="Custom designs" />
+        <div className="overlay-text">
+          <p className="overlay">Bring us your custom design ideas</p>
+        </div>
+      </div>
+    </div>
     </>
   );
 };

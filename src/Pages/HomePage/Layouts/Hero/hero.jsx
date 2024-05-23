@@ -9,10 +9,14 @@ const hero = () => {
     <div className="hero-container">
       <div className="content">
         <div className="hero-text">
-          <h1 id="hdtext">Welcome to the World of Precision Welding,</h1>
-          <h2 id="mintext">Where Craftsmanship Meets Innovation.</h2>
-          <p>Elevated Steel Solutions is here to bring your dreams to reality with bespoke and unique designs crafted from sturdy metals,
-            enhancing the aesthetic appeal of your projects. Try us today!</p>
+          <div className="headings">
+            <h1 id="hdtext">Welcome to the World of Precision Welding,</h1>
+            <h2 id="mintext">Where Craftsmanship Meets Innovation.</h2>
+          </div>
+          <div className="p-headings">
+            <p>Elevated Steel Solutions is here to bring your dreams to reality with bespoke and unique designs crafted from sturdy metals,
+              enhancing the aesthetic appeal of your projects. Try us today!</p>
+          </div>
 
           <div className="btn-container">
             <Link to="/contact" className="btn">Contact Us</Link>

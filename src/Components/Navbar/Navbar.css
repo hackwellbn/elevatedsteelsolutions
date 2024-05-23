@@ -7,6 +7,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  transition: position 0.3s ease;
+}
+
+.navbar.fixed {
+  position: fixed;
 }
 
 .ess {
@@ -69,7 +76,6 @@
 
 /* Styles for small screens */
 @media screen and (max-width: 768px) {
-  /* Styles for .menu on small screens */
   .menu {
     position: relative;
     display: flex;
@@ -79,7 +85,6 @@
     transition: transform 0.3s ease;
   }
 
-  /* Sidebar styles */
   .sidebar {
     position: fixed;
     top: 0;

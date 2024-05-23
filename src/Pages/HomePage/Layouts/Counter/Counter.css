@@ -1,13 +1,17 @@
-.counter{
-    width: 80%;
-    text-align: center;
-    margin: 0 auto;
+.counter {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  animation: appearance linear;
+  animation-timeline: view();
+  animation-range: entry 25% cover 50%;
 }
-.counter-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
+.counter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
-.container-content{
-    flex: 1 1 200px;
+.container-content {
+  flex: 1 1 200px;
+  padding: 20px;
 }
