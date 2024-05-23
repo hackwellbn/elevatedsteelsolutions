@@ -66,7 +66,7 @@ const Choice = () => {
         <div className="sits-content">
           <img src={sit_3} alt="" />
           <div className="overlay-text">
-            <p className="overlay">do not hesittate to bring us </p>
+            <p className="overlay">do not hesitate to bring us </p>
           </div>
         </div>
       </div>

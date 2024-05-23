@@ -9,13 +9,16 @@ const hero = () => {
     <div className="hero-container">
       <div className="content">
         <div className="hero-text">
-          <h1>welcome to elevated steel solutions</h1>
-          <h2>Your partner in welding solutions</h2>
+          <h1 id="hdtext">Welcome to the World of Precision Welding,</h1>
+          <h2 id="mintext">Where Craftsmanship Meets Innovation.</h2>
+          <p>Elevated Steel Solutions is here to bring your dreams to reality with bespoke and unique designs crafted from sturdy metals,
+            enhancing the aesthetic appeal of your projects. Try us today!</p>
+
           <div className="btn-container">
-          <Link to="/contact" className="btn">Contact Us</Link>
-          <Link to="/services/:capabilities" className="btn sign-up">Capabilites</Link>
+            <Link to="/contact" className="btn">Contact Us</Link>
+            <Link to="/services/:capabilities" className="btn sign-up">Capabilites</Link>
           </div>
-          
+
         </div>
       </div>
       <div className="content">

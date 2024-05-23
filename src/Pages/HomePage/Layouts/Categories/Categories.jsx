@@ -36,8 +36,7 @@ const Categories = () => {
               process of making your own door using welding techniques. Get
               ready to embark on a journey of craftsmanship and creativity!
             </p>
-            <a href="/blogs" className="btn">
-              Learn More
+            <a href="Blogs" className="btn">Learn More
             </a>
           </div>
         </div>
