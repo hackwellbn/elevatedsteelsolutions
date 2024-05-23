@@ -20,7 +20,7 @@ const hero = () => {
 
           <div className="btn-container">
             <Link to="/contact" className="btn">Contact Us</Link>
-            <Link to="/services/:capabilities" className="btn sign-up">Capabilites</Link>
+            <Link to="/services/#capabilities" className="btn sign-up">Capabilites</Link>
           </div>
 
         </div>

@@ -4,7 +4,7 @@ import "./Cards.css";
 const Cards = () => {
   return (
     <>
-      <h1 className="head-text">our Capabilities</h1>
+      <h1 className="head-text" id="capabilities">our Capabilities</h1>
       <div className="cards-container">
         <div className="cards-content">
           <h2 className="head-text">Welding Repairs</h2>
