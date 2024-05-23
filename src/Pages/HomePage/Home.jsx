@@ -9,6 +9,7 @@ import Process from "./Layouts/Process/Process";
 import Faq from "./Layouts/Faq/Faq";
 import NewsletterSignup from "./Layouts/NewsLetterSignup/NewsletterSignup";
 import Partners from "./Layouts/Partners/Partners";
+import TeamSection from "./Layouts/OurTeam/TeamSection";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <NewsletterSignup />
       <Testimonials />
       <Partners />
+      <TeamSection />
     </div>
   );
 };

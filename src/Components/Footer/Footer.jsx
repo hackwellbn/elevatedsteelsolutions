@@ -22,7 +22,7 @@ const Footer = () => {
     },
     {
       icon: faInstagram,
-      url: "https://instagram.com",
+      url: "https://www.instagram.com/elev.atedfabricator?igsh=NDc3YTB3NnV0MWpn",
       className: "instagram-icon",
     },
     {

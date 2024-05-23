@@ -1,7 +1,7 @@
 // TeamSection.jsx or TeamSection.js
 import React from 'react';
 import './TeamSection.css';
-
+import { teamMembers } from '../../../../assets/assets'
 const TeamSection = () => {
 
 

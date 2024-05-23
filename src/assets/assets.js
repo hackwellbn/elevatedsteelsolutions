@@ -7,7 +7,7 @@ import finishing from "./finishing.jpg";
 import logo_A from "./logo_A.jpeg";
 import logo_B from "./logo_2.jpeg";
 import logo_C from "./logo.jpeg";
-import softNet from "./softnet.jpg";
+// import softNet from "./softnet.jpg";
 
 export const assets = [
   {
