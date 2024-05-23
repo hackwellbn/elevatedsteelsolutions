@@ -1,22 +1,20 @@
-// Pricing.jsx or Pricing.js
-
 import React, { useState, useEffect } from 'react';
 import './pricingPlans.css';
 
 const pricingPlans = [
   {
     title: "Basic Welding",
-    price: "$50/hour",
+    price: "Ksh 1800/hour", // Updated price in Ksh
     features: ["Spot Welding", "Metal Repair", "Basic Custom Fabrication"],
   },
   {
     title: "Standard Welding",
-    price: "$80/hour",
+    price: "Ksh 2880/hour", // Updated price in Ksh
     features: ["MIG Welding", "TIG Welding", "Moderate Custom Fabrication", "Metal Cutting"],
   },
   {
     title: "Premium Welding",
-    price: "$120/hour",
+    price: "Ksh 4320/hour", // Updated price in Ksh
     features: ["Advanced Custom Fabrication", "Pipe Welding", "Aluminum Welding", "Stainless Steel Welding", "On-Site Services"],
   },
 ];
@@ -46,8 +44,23 @@ const Pricing = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic (e.g., send data to server)
-    alert('Your request has been sent!');
+    const { name, email, message } = contactInfo;
+    const selectedPlanInfo = pricingPlans[selectedPlan];
+    const planTitle = selectedPlanInfo.title;
+    const planPrice = selectedPlanInfo.price;
+
+    // Compose email content
+    const emailContent = `
+      Name: ${name}
+      Email: ${email}
+      Selected Plan: ${planTitle}
+      Price: ${planPrice}
+      Message: ${message}
+      Contact: WhatsApp: +254 727 770425`;
+
+    // Send email
+    window.location.href = `mailto:elevatedsteelsolution@gmail.com?subject=Inquiry%20About%20${planTitle}&body=${encodeURIComponent(emailContent)}`;
+
     // Clear the form
     setContactInfo({ name: '', email: '', message: '' });
   };
@@ -207,3 +220,4 @@ const Pricing = () => {
 };
 
 export default Pricing;
+
