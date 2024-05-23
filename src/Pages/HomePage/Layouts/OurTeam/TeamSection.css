@@ -1,0 +1,50 @@
+/* TeamSection.css */
+.team-section {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+  }
+  
+  .team-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .member {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .member:hover {
+    transform: translateY(-5px);
+  }
+  
+  .member img {
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  
+  .member-info {
+    text-align: center;
+  }
+  
+  .member-info h3 {
+    color: #555;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .member-info p {
+    color: #777;
+  }
+  

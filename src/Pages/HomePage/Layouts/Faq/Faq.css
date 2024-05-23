@@ -1,0 +1,42 @@
+/* FAQ.css */
+.faq-section {
+    padding: 50px 0;
+    background-color: #f8f8f8;
+    text-align: center;
+   
+  }
+  
+  .faq-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .faq-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .faq-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+  }
+  
+  .faq-item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #555;
+  }
+  
+  .faq-item p {
+    color: #777;
+  }
+  
