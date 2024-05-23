@@ -5,6 +5,7 @@ import Testimonials from "./Layouts/Testimonials/Testimonials";
 import Categories from "./Layouts/Categories/Categories";
 import Choice from "./Layouts/Choice/Choice";
 import Counter from "./Layouts/Counter/Counter";
+import Process from "./Layouts/Process/Process";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Categories />
       <Services />
       <Choice />
+      <Process />
       <Testimonials />
     </div>
   );

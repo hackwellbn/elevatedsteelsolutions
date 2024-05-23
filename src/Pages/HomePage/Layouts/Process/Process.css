@@ -1,0 +1,53 @@
+/* src/components/WeldingProcess.css */
+
+.welding-process-container {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  .welding-process-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+  }
+  
+  .process-steps {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .step {
+    flex-grow: 1;
+    flex-basis: 250px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .step:hover {
+    transform: translateY(-10px);
+  }
+  
+  .step img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .step h3 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #f9004d;
+  }
+  
+  .step p {
+    padding: 0 15px 20px;
+    color: #555;
+    font-size: 1em;
+  }
+  
