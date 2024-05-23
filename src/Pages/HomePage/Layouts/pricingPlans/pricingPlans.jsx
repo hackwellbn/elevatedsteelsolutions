@@ -1,4 +1,5 @@
 // Pricing.jsx or Pricing.js
+
 import React, { useState, useEffect } from 'react';
 import './pricingPlans.css';
 
@@ -114,6 +115,93 @@ const Pricing = () => {
           </form>
         </div>
       )}
+      <div className="comparison-table">
+        <h3>Compare Our Plans</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Basic</th>
+              <th>Standard</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Spot Welding</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Metal Repair</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Basic Custom Fabrication</td>
+              <td>✓</td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>MIG Welding</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>TIG Welding</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Moderate Custom Fabrication</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Metal Cutting</td>
+              <td></td>
+              <td>✓</td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Advanced Custom Fabrication</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Pipe Welding</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Aluminum Welding</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>Stainless Steel Welding</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+            </tr>
+            <tr>
+              <td>On-Site Services</td>
+              <td></td>
+              <td></td>
+              <td>✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
