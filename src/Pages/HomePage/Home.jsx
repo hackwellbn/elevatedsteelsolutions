@@ -10,6 +10,7 @@ import Faq from "./Layouts/Faq/Faq";
 import NewsletterSignup from "./Layouts/NewsLetterSignup/NewsletterSignup";
 import Partners from "./Layouts/Partners/Partners";
 import TeamSection from "./Layouts/OurTeam/TeamSection";
+import Pricing from "./Layouts/pricingPlans/pricingPlans";
 
 const Home = () => {
   return (
@@ -25,6 +26,7 @@ const Home = () => {
       <Testimonials />
       <Partners />
       <TeamSection />
+      <Pricing />
     </div>
   );
 };

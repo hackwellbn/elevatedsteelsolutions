@@ -1,0 +1,140 @@
+/* Pricing.css */
+.pricing-section {
+    padding: 50px 0;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  .pricing-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .pricing-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .pricing-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .pricing-card.selected {
+    border: 2px solid #007bff;
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-card h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .price {
+    font-size: 2rem;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .features li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .select-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .select-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .pricing-card.selected .select-button {
+    background-color: #0056b3;
+  }
+  
+  .contact-form {
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 500px;
+    margin: 30px auto 0;
+  }
+  
+  .contact-form h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
