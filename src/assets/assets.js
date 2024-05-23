@@ -7,6 +7,7 @@ import finishing from "./finishing.jpg";
 import logo_A from "./logo_A.jpeg";
 import logo_B from "./logo_2.jpeg";
 import logo_C from "./logo.jpeg";
+import manuAi from "./manuai.jpg";
 // import softNet from "./softnet.jpg";
 
 export const assets = [
@@ -66,21 +67,25 @@ export const partnerships = [
   },
   // Add more partnerships as needed
 ];
+// assets/assets.js
 export const teamMembers = [
   {
     name: "Immanuel Okoth",
     role: "CEO",
-    image: "path/to/john-doe-image.jpg",
+    image: manuAi,
+    bio: "Immanuel is the CEO with over 20 years of experience in the industry.",
   },
   {
     name: "Jane AUs",
     role: "CTO",
-    image: "path/to/jane-smith-image.jpg",
+    image: manuAi,
+    bio: "Jane is the CTO and a tech visionary.",
   },
   {
     name: "David Johnson",
     role: "Lead Developer",
-    image: "path/to/david-johnson-image.jpg",
+    image: manuAi,
+    bio: "David is our Lead Developer and code guru.",
   },
   // Add more team members as needed
 ];

@@ -1,17 +1,24 @@
 .counter {
-  width: 80%;
   text-align: center;
-  margin: 0 auto;
+  /* */
+  background-color: var(--secondary-color);
+  min-height: 400px;
+}
+.counter-container {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
   animation: appearance linear;
   animation-timeline: view();
   animation-range: entry 25% cover 50%;
-}
-.counter-container {
-  display: flex;
-  flex-wrap: wrap;
   gap: 16px;
 }
 .container-content {
   flex: 1 1 200px;
   padding: 20px;
+  text-align: center;
+}
+.counter-content{
+  gap: 3.2em;
 }
