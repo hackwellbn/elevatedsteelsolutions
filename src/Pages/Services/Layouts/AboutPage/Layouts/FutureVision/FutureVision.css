@@ -1,0 +1,49 @@
+/* FutureVision.css */
+
+.future-vision-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .future-vision-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .future-vision-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .vision-statement {
+    font-style: italic;
+    margin-bottom: 30px;
+  }
+  
+  .future-vision-container h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .strategic-goals ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .strategic-goals li {
+    margin-bottom: 10px;
+  }
+  
+  /* Add styles for other subsections as needed */
+  
+  .innovation-technology,
+  .industry-leadership,
+  .customer-centric,
+  .global-impact,
+  .measuring-success,
+  .call-to-action {
+    margin-top: 50px;
+  }
+  

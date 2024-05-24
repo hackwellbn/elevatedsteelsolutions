@@ -1,6 +1,8 @@
 import React from "react";
 import "./about.css";
 import vid_one from "../../../../assets/vid.mp4";
+import Mission from "./Layouts/Mission/Mission";
+import FutureVision from "./Layouts/FutureVision/FutureVision";
 const about = () => {
   return (
     <div>
@@ -33,6 +35,8 @@ const about = () => {
           </div>
         </div>
       </section>
+      <Mission />
+      <FutureVision />
     </div>
   );
 };
