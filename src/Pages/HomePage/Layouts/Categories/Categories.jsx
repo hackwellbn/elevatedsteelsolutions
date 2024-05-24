@@ -1,5 +1,6 @@
 import React from "react";
 import "./Categories.css";
+import { Link } from "react-router-dom";
 
 const Categories = () => {
   return (
@@ -19,9 +20,9 @@ const Categories = () => {
               techniques, including MIG welding, TIG welding, and arc welding,
               to meet the specific requirements of each project.
             </p>
-            <a href="/services" className="btn">
+            <Link to="/services" className="btn">
               Learn More
-            </a>
+            </Link>
           </div>
         </div>
         <div className="categories-content" id="cat-bg">
@@ -36,8 +37,8 @@ const Categories = () => {
               process of making your own door using welding techniques. Get
               ready to embark on a journey of craftsmanship and creativity!
             </p>
-            <a href="/blogs" className="btn">Learn More
-            </a>
+            <Link to="/blogs" className="btn">Learn More
+            </Link>
           </div>
         </div>
       </div>
