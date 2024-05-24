@@ -48,9 +48,9 @@ const Contact = () => {
       </div>
       <form className="contact-form" onSubmit={onSubmit}>
         <h2>Send Us a Message</h2>
-        <input type="text" placeholder="Your Name" />
-        <input type="email" placeholder="Your Email" />
-        <textarea placeholder="Your Message"></textarea>
+        <input type="text" name="name" placeholder="Your Name" />
+        <input type="email" name="email" placeholder="Your Email" />
+        <textarea name="message" placeholder="Your Message"></textarea>
         <button type="submit">Send</button>
       </form>
       <span>{result}</span>
