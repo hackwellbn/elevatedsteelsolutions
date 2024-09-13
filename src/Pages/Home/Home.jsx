@@ -1,8 +1,14 @@
 import React from 'react'
-
+import Hero from './_Layouts/Hero/Hero'
+import ContactForm from './_Layouts/ContactForm/ContactForm'
+import Testimonials from './_Layouts/Testimonials/Testimonials'
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <Hero />
+        <Testimonials />
+        <ContactForm />
+    </div>
   )
 }
 
