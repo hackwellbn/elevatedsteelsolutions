@@ -1,6 +1,24 @@
 .Footer {
   padding: 80px 64px;
+  margin-bottom: 0;
+color: var(--text-color);
+}
+.footer-container{
+    display: flex;
+    gap: 120px;
 }
 .footer-wrapper {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.foot-body .footer-links{
+    margin-bottom: 10px;
+    display: block;
+    gap: 10px;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+
 }
