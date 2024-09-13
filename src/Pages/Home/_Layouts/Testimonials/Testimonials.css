@@ -1,5 +1,54 @@
-.Testimonials{
+.Testimonials {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Add spacing between columns */
+    padding: 20px; /* Add padding around the grid */
+    height: 640px; /* Allow height to adjust based on content */
+}
 
+.testimonials-tbody {
+    background: var(--bx-color);
+    border-radius: 8px; /* Rounded corners */
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    height: 100%;
+    box-sizing: border-box; /* Ensure padding is included in height */
+}
+
+.testimonial-container p {
+    font-size: 18px; /* Adjust font size as needed */
+    color: var(--text-color);
+    margin-bottom: 20px; /* Space between text and author */
+}
+
+.testimonial-container h6 {
+    font-size: 16px; /* Adjust font size for the author */
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .Testimonials {
+        grid-template-columns: 1fr; /* Stack testimonials vertically on small screens */
+    }
+
+    .testimonial-container {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .testimonial-container p {
+        font-size: 16px; /* Adjust font size for small screens */
+    }
+
+    .testimonial-container h6 {
+        font-size: 14px; /* Adjust font size for small screens */
+    }
 }

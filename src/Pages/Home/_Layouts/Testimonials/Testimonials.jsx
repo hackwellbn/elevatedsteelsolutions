@@ -9,9 +9,10 @@ const Testimonials = () => {
             “Elevated Steel Solutions transformed our vision into reality with
             their exceptional welding services!”
           </p>
+          <h6>Crisphine Odhiambo, Project Manager</h6>
         </div>
       </div>
-      <div className="testimonials-tbody"></div>
+      <div className="testimonials-tbody" id="tbody"></div>
     </div>
   );
 };
