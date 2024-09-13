@@ -1,5 +1,5 @@
 .Testimonials{
     display: grid;
-    grid-template-columns: 1f 1fr;
+    grid-template-columns: 1fr 1fr;
 
 }
