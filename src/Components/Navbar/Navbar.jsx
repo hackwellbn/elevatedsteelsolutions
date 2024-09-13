@@ -1,60 +1,57 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "./Navbar.css";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [isFixed, setIsFixed] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const toggleSidebar = () => {
-    setSidebarOpen(!sidebarOpen);
-  };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 600) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className={`navbar ${isFixed ? "fixed" : ""}`}>
+    <nav className="navbar">
       <div className="navbar-container">
-        <div className="navbar-toggle" onClick={toggleSidebar}>
-          <span className={`menu ${sidebarOpen ? "open" : ""}`}></span>
+        <Link to="/" className="navbar-logo">
+            ELevated steel solutions
+        </Link>
+        <div className="navbar-toggle" onClick={toggleMenu}>
+          <span className="navbar-toggle-icon"></span>
+          <span className="navbar-toggle-icon"></span>
+          <span className="navbar-toggle-icon"></span>
         </div>
-        <div className={`sidebar ${sidebarOpen ? "open" : ""}`}>
-          <span className="close-icon" onClick={toggleSidebar}>
-            &#10005;
-          </span>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <a href="/#Testimonials">Testimonials</a>
-            </li>
-            <li>
-              <Link to="/services">Services</Link>
-            </li>
-            <li>
-              <Link to="/Blogs">Blogs</Link>
-            </li>
-            <li>
-              <Link to="/Gallery">Gallery</Link>
-            </li>
-          </ul>
-        </div>
+        <ul className={`navbar-menu ${isOpen ? 'active' : ''}`}>
+          <li className="navbar-item">
+            <Link to="/" className="navbar-link" onClick={closeMenu}>
+              Home
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/about" className="navbar-link" onClick={closeMenu}>
+              About
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/services" className="navbar-link" onClick={closeMenu}>
+              Services
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <Link to="/contact" className="navbar-link" onClick={closeMenu}>
+              Contact
+            </Link>
+          </li>
+          <li className="navbar-item">
+            <a href="https://example.com" className="navbar-button" onClick={closeMenu}>
+              Sign Up
+            </a>
+          </li>
+          <li className="navbar-item">
+            <button className="navbar-close" onClick={closeMenu}>
+              &times;
+            </button>
+          </li>
+        </ul>
       </div>
-      <span className="ess">E.S.S</span>
     </nav>
   );
 };

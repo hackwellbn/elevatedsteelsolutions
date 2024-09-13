@@ -1,27 +1,6 @@
-.footer{
-  width: 100%;
-  background-color: var(--most-used-color);
+.Footer {
+  padding: 80px 64px;
 }
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-a{
-  text-decoration: none!important;
-}
-.footer-content {
-  flex-grow: 1;
-  flex-basis: 200px;
-  padding: 20px;
-}
-.paragraph {
-  color: var(--primary-color);
-}
-.links {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-.copyright {
-  text-align: center;
+.footer-wrapper {
+  display: grid;
 }

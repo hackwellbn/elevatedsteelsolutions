@@ -1,29 +1,29 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./Components/Navbar/Navbar";
-import Home from "./Pages/HomePage/Home";
-import Contact from "./Pages/ContactPage/contact";
-import Footer from "./Components/Footer/Footer";
-import Services from './Pages/Services/Services';
-import Blogs from "./Pages/Blogs/Blogs";
-import Gallery from "./Pages/Gallery/Gallery";
-import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import React from 'react';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './Components/Navbar/Navbar';
+import './App.css';
+import Footer from './Components/Footer/Footer';
+
+const HomePage = () => <div>Home Page</div>;
+const AboutPage = () => <div>About Page</div>;
+const ServicesPage = () => <div>Services Page</div>;
+const ContactPage = () => <div>Contact Page</div>;
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/blogs" element={<Blogs />} />
-        <Route path="/gallery" element={<Gallery />} />
-      </Routes>
-      <Footer />
-    </BrowserRouter>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          {/* Add more routes here as needed */}
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

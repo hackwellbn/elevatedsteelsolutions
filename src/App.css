@@ -1,73 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
-:root {
-  --white-background: #ffffff; /* White Background Color */
-  --primary-color: #333333; /* Primary Color */
-  --secondary-color: #24578e; /* Secondary Color */
-  --tertiary-color: #1a1a1a; /* Tertiary Color */
-  --quaternary-color: #808080; /* Quaternary Color */
-  --quinary-color: #ffcc00; /* Quinary Color */
-  --senary-color: #ff7f0e; /* Senary Color */
-  --most-used-color: #f98; /* Most Used Color */
-  /* font size */
-  --paragraph-font-size: 20px;
-}
-.white-section {
-  background-color: var(--white-background);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+:root{
+  --text-color:#EEEEEE;
+  --bg-color:#222831;
+  --bg-btn-color: #008A90;
 }
 
-.header {
-  background-color: var(--secondary-color);
-}
 
-.footer {
-  /* background-color: var(--tertiary-color); */
-  background-color: var(--most-used-color);
-  color: var(--secondary-color);
-}
-
-.button {
-  background-color: var(--quaternary-color);
-  color: #f98;
-}
-a {
-  text-decoration: none;
-  color: #ede4e4;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+*{
   margin: 0;
-  font-family: "Outfit", sans-serif;
-  scroll-behavior: auto;
-}
-
-p {
-  font-size: var(--paragraph-font-size);
-}
-.btn {
-  font-size: 20px !important;
-}
-
-@keyframes slidein {
-  0%,
-  50% {
-    opacity: 0;
-    transform: translateY(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes appearance {
-  from {
-    opacity: 0;
-    scale: 0.8;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
+  padding: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  background: var(--bg-color);
 }
