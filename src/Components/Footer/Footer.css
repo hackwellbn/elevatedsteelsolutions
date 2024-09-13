@@ -1,24 +1,128 @@
+/* General Footer Styles */
 .Footer {
-  padding: 80px 64px;
-  margin-bottom: 0;
-color: var(--text-color);
-}
-.footer-container{
+    padding: 40px 20px;
+    background-color: var(--primary-background);
+    color: var(--text-color);
+    text-align: left;
+  }
+  
+  /* Footer Container */
+  .footer-container {
     display: flex;
-    gap: 120px;
-}
-.footer-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.foot-body .footer-links{
-    margin-bottom: 10px;
-    display: block;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Footer Wrapper */
+  .footer-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    flex-grow: 1; /* Make this section take available space */
+  }
+  
+  .foot-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-heading {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    flex-direction: column;
     gap: 10px;
-}
-
-a{
+  }
+  
+  .footer-links a {
     color: var(--text-color);
     text-decoration: none;
-
-}
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Email Subscription Section */
+  .mail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    max-width: 250px; /* Adjust the width of the subscription box */
+  }
+  
+  .mail input[type="email"] {
+    padding: 8px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: var(--text-color);
+  }
+  
+  .social-icon:hover {
+    color: var(--primary-hover-color); /* Define a hover color */
+  }
+  
+  /* Footer Bottom Links */
+  .footer-last {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 0;
+    border-top: 1px solid var(--text-color);
+  }
+  
+  .footer-last .links {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-last .links p {
+    margin: 0;
+  }
+  
+  .footer-last .links a {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .footer-wrapper {
+      grid-template-columns: 1fr 1fr; /* Two columns on tablet */
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .footer-wrapper {
+      grid-template-columns: 1fr; /* Single column on small screens */
+    }
+  }
+  form{
+    display: flex;
+    gap: 10px;
+  }

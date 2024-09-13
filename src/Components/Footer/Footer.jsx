@@ -10,20 +10,57 @@ import {
 } from "react-icons/fa"; // FontAwesome Icons
 
 const Footer = () => {
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("email Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
+
   return (
     <div className="Footer">
       <div className="footer-container">
         <div className="footer-wrapper">
           <div className="foot-body">
-            <h3>Elevated steel solutions</h3>
+            <h3 className="footer-heading">Elevated steel solutions</h3>
           </div>
           <div className="foot-body">
             <h3>company info</h3>
             <div className="footer-links">
-              <Link to="/">resources</Link>
-              <Link to="/about">About</Link>
-              <Link to="/services">Our Services</Link>
-              <Link to="/contact">Testimonials</Link>
+              <div>
+                {" "}
+                <Link to="/">resources</Link>
+              </div>
+              <div>
+                {" "}
+                <Link to="/about">About</Link>
+              </div>{" "}
+              <div>
+                {" "}
+                <Link to="/services">Our Services</Link>
+              </div>{" "}
+              <div>
+                {" "}
+                <Link to="/contact">Testimonials</Link>
+              </div>{" "}
             </div>
           </div>
           <div className="foot-body">
@@ -48,17 +85,30 @@ const Footer = () => {
           <div className="foot-body">
             <h3>follow Us</h3>
             <div className="footer-links">
-              <Link to="/instagram">Instagram</Link>
-              <Link to="/facebook">Facebook</Link>
-              <Link to="/linkedin">LinkedIn</Link>
-              <Link to="/youtube">YouTube</Link>
+              <div>
+                {" "}
+                <Link to="/instagram">Instagram</Link>
+              </div>
+              <div>
+                {" "}
+                <Link to="/facebook">Facebook</Link>
+              </div>
+              <div>
+                {" "}
+                <Link to="/linkedin">LinkedIn</Link>
+              </div>
+              <div></div>{" "}
             </div>
           </div>
         </div>
         <div className="mail">
           <h3>Subscribe</h3>
           <p>Join our newsletter for the latest updates and offers.</p>
-          <input type="email" />
+          <form onSubmit={onSubmit}>
+            <input type="email" name="email" required placeholder="enter your email"/>
+            <button type="submit" className="navbar-button">Submit</button>
+          </form>
+          <span>{result}</span>
         </div>
       </div>
       <hr />
