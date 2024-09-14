@@ -53,15 +53,15 @@ const Counter = () => {
   return (
     <div style={styles.container}>
       <div style={styles.counterBox}>
-        <h2>{Math.floor(companies)}K</h2>
+        <h2>{Math.floor(companies)}K+</h2>
         <p>Companies Worked With</p>
       </div>
       <div style={styles.counterBox}>
-        <h2>{Math.floor(individuals)}K</h2>
+        <h2>{Math.floor(individuals)}K+</h2>
         <p>Individuals Served</p>
       </div>
       <div style={styles.counterBox}>
-        <h2>{Math.floor(partners)}K</h2>
+        <h2>{Math.floor(partners)}K+</h2>
         <p>Partners Engaged</p>
       </div>
     </div>
