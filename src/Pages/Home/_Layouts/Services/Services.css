@@ -41,3 +41,6 @@
   color: var(--text-color);
   margin-bottom: 20px;
 }
+h6{
+    color: var(--text-color);
+}

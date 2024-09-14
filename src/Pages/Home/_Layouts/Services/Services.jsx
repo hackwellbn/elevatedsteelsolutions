@@ -10,7 +10,7 @@ const Services = () => {
         {ServicesData.map((item, index) => (
           <div key={index} className="card">
             <img src={item.image} alt={item.title} />
-            <h6>Precision. Quality. Reliability.</h6>
+            <h6>{item.heading}</h6>
             <h4>{item.title}</h4>
             <p>{item.description}</p>
             <a href="#" className="btn btn-primary">
