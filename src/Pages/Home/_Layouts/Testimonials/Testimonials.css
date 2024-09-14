@@ -7,10 +7,12 @@
 }
 
 .testimonials-tbody {
-    background: var(--bx-color);
+    background: var(--bg-color);
     border-radius: 8px; /* Rounded corners */
 }
-
+#tbody{
+    background: var(--bx-color);
+}
 .testimonial-container {
     display: flex;
     flex-direction: column;

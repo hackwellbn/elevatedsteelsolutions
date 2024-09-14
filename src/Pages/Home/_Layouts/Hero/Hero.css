@@ -1,20 +1,118 @@
 .hero {
-  background: url(../../../../assets/image5.jpg);
-  height: 100vh;
-  background-size: contain;
-  background-position: center;
-  background-color: rgba(0,0,0,0. 0.1);
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  top: 0;
-  left: 0;
-}
-.heading{
+    background: 
+      linear-gradient(
+        hsla(0, 0%, 0%, 0.6), /* Darker black tint with 0.6 opacity */
+        hsla(0, 0%, 0%, 0.2)  /* Lighter black tint with 0.2 opacity */
+      ), 
+      url(../../../../assets/image5.jpg) center/cover no-repeat; /* Background image */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    padding: 0 20px; /* Padding for smaller screens */
+  }
+  
+  .container-hero {
+    width: 50%;
+    min-height: auto;
+    position: relative;
+    z-index: 1; /* Ensures text is above the background */
+  }
+  
+  .heading, .hero-p {
+    background: transparent; /* Make the text background transparent */
+    color: white; /* Ensures text is readable against the background */
+  }
+  
+  .heading {
     font-size: 72px;
-}
-.hero-p{
+  }
+  
+  .hero-p {
     font-size: 18px;
     margin-top: 20px;
-}
+  }
+  
+  .link-container {
+    margin-top: 20px;
+  }
+  
+  .link-container a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff; /* White for visibility */
+    font-weight: bold;
+  }
+  
+  /* Responsive Design: Media Queries */
+  @media (max-width: 1200px) {
+    .heading {
+      font-size: 64px;
+    }
+  
+    .container-hero {
+      width: 60%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .heading {
+      font-size: 56px;
+    }
+  
+    .container-hero {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heading {
+      font-size: 48px;
+    }
+  
+    .hero-p {
+      font-size: 16px;
+    }
+  
+    .container-hero {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .heading {
+      font-size: 36px;
+    }
+  
+    .hero-p {
+      font-size: 14px;
+    }
+  
+    .container-hero {
+      width: 90%;
+    }
+  
+    .hero {
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 400px) {
+    .heading {
+      font-size: 28px;
+    }
+  
+    .hero-p {
+      font-size: 12px;
+    }
+  
+    .container-hero {
+      width: 95%;
+    }
+  }
+  
