@@ -32,11 +32,11 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contactform" >
+    <div className="contactform" id="contact">
       <div className="contactform-body">
         <img src={assets[0].image} alt="Background" />
       </div>
-      <div className="contactform-body" id="contact">
+      <div className="contactform-body" >
         <div className="form-container">
           <h1 className="form-head">Connect with Us</h1>
           <p className="paragraph">We are here to help you with your welding needs</p>

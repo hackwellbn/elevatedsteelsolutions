@@ -14,7 +14,7 @@ const Services = () => {
             <h4>{item.title}</h4>
             <p>{item.description}</p>
             <a href="#" className="btn btn-primary">
-              Learn More
+              {item.Link}
             </a>
           </div>
         ))}
