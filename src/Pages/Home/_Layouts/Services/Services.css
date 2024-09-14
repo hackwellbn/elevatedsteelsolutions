@@ -10,7 +10,7 @@
 }
 
 .card {
-  flex: 1 1 calc(33.333% - 40px); /* Ensure three cards fit in one row, with space */
+  flex: 1 1 200px; /* Ensure three cards fit in one row, with space */
   box-sizing: border-box;
   border: 1px solid #ccc;
   padding: 20px;
