@@ -74,6 +74,7 @@ export default Counter;
 const styles = {
   container: {
     display: "flex",
+    flexWrap:"wrap",
     justifyContent: "space-around",
     alignItems: "center",
     padding: "20px",
@@ -83,6 +84,7 @@ const styles = {
     color: "white",
   },
   counterBox: {
+    flex: "1 1 200px",
     textAlign: "center",
     padding: "20px",
     borderRadius: "10px",
