@@ -64,22 +64,16 @@ const Footer = () => {
             </div>
           </div>
           <div className="foot-body">
-            <h3>blog</h3>
+            <h3>Contact Information</h3>
             <div className="footer-links">
               <div>
                 {" "}
-                <Link to="/">Faqs</Link>
+                <Link to="/">elevatedsteelsolution@gmail.com</Link>
               </div>
               <div>
-                <Link to="/">contact us</Link>
+                Luckysummer ward,Ruaraka
               </div>
-              <div>
-                {" "}
-                <Link to="/">Privacy policy</Link>
-              </div>
-              <div>
-                <Link to="/">Terms of service</Link>
-              </div>
+              <div>+254 (0) 727770425</div>
             </div>
           </div>
           <div className="foot-body">
@@ -105,8 +99,15 @@ const Footer = () => {
           <h3>Subscribe</h3>
           <p>Join our newsletter for the latest updates and offers.</p>
           <form onSubmit={onSubmit}>
-            <input type="email" name="email" required placeholder="enter your email"/>
-            <button type="submit" className="navbar-button">Submit</button>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="enter your email"
+            />
+            <button type="submit" className="navbar-button">
+              Submit
+            </button>
           </form>
           <span>{result}</span>
         </div>

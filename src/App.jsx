@@ -7,7 +7,6 @@ import Home from './Pages/Home/Home';
 
 const AboutPage = () => <div>About Page</div>;
 const ServicesPage = () => <div>Services Page</div>;
-const ContactPage = () => <div>Contact Page</div>;
 
 const App = () => {
   return (
@@ -18,7 +17,6 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/contact" element={<ContactPage />} />
           {/* Add more routes here as needed */}
         </Routes>
         <Footer />

@@ -1,0 +1,55 @@
+.Process {
+    padding: 16px 96px;
+  }
+  
+  .process-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .process-head{
+    color: var(--text-color);
+    margin-bottom: 32px;
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .step {
+    display: flex;
+    align-items: center;
+    padding: 16px 0;
+  }
+  
+  .bigNumber {
+    font-size: 48px;
+    font-weight: bold;
+    margin-right: 16px;
+    color: var(--bx-color);
+  }
+  
+  .content h5 {
+    margin: 0;
+    font-size: 15px;
+    color: var(--text-color);
+  }
+  
+  .content p {
+    margin: 4px 0 0;
+    font-size: 16px;
+  }
+  
+  .step-divider {
+    height: 1px;
+    background-color: var(--bx-color);
+    margin: 16px 0;
+    width: 100%;
+  }
+  
+  .step:last-child .step-divider {
+    display: none; /* Hide divider after the last step */
+  }
+  

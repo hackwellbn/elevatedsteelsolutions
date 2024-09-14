@@ -3,7 +3,7 @@
   --text-color: #eeeeee;
   --bg-color: #222831;
   --bg-btn-color: #008a90;
-  --bx-color: #b3b3b3;
+  --bx-color: #566173;
 }
 
 * {
@@ -12,6 +12,8 @@
   font-family: "IBM Plex Sans", sans-serif;
   background: var(--bg-color);
   text-transform: capitalize;
+}
+html {
   scroll-behavior: smooth;
 }
 h1,
