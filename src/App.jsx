@@ -5,7 +5,7 @@ import './App.css';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home/Home';
 import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
-
+import TermsOfService from './Pages/TermsOfService/TermsOfService';
 const AboutPage = () => <div>About Page</div>;
 const ServicesPage = () => <div>Services Page</div>;
 
@@ -19,6 +19,7 @@ const App = () => {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/Privacy" element={<PrivacyPolicy />} />
+          <Route path="/Terms" element={<TermsOfService />} />
           {/* Add more routes here as needed */}
         </Routes>
         <Footer />
