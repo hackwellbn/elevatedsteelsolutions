@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-
+import SignupPopup from '../SignupPopup/SignupPopup';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -42,9 +42,11 @@ const Navbar = () => {
             <a href="#contact" className="navbar-link" >contact</a>
           </li>
           <li className="navbar-item">
-            <a href="https://example.com" className="navbar-button" onClick={closeMenu}>
+            {/* <a href="https://example.com" className="navbar-button" onClick={closeMenu}>
               Sign Up
-            </a>
+            </a> */}
+                  <SignupPopup />
+
           </li>
           <li className="navbar-item">
             <button className="navbar-close" onClick={closeMenu}>

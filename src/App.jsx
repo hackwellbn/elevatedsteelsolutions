@@ -20,6 +20,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/Privacy" element={<PrivacyPolicy />} />
           <Route path="/Terms" element={<TermsOfService />} />
+        
           {/* Add more routes here as needed */}
         </Routes>
         <Footer />
