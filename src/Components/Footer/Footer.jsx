@@ -117,7 +117,7 @@ const Footer = () => {
         <div className="links">
           <p>&copy; ELevated steel solutions. All rights reserved. </p>
           <p>
-            <Link>Privacy policy</Link>
+            <Link to="/Privacy">Privacy policy</Link>
           </p>
           <p>
             <Link>Terms of service </Link>

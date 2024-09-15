@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar/Navbar';
 import './App.css';
 import Footer from './Components/Footer/Footer';
 import Home from './Pages/Home/Home';
+import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 
 const AboutPage = () => <div>About Page</div>;
 const ServicesPage = () => <div>Services Page</div>;
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/services" element={<ServicesPage />} />
+          <Route path="/Privacy" element={<PrivacyPolicy />} />
           {/* Add more routes here as needed */}
         </Routes>
         <Footer />

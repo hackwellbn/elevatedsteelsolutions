@@ -1,0 +1,55 @@
+:root {
+    --text-color: #eeeeee;
+    --bg-color: #222831;
+    --bg-btn-color: #008a90;
+    --bx-color: #566173;
+  }
+  
+  .privacy-policy-container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .privacy-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--bg-btn-color);
+  }
+  
+  .privacy-section {
+    margin-bottom: 20px;
+  }
+  
+  .privacy-section h2 {
+    font-size: 1.8rem;
+    color: var(--bg-btn-color);
+  }
+  
+  .privacy-section p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  .privacy-section ul {
+    list-style: disc;
+    margin-left: 20px;
+  }
+  
+  .privacy-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    color: var(--bg-btn-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
