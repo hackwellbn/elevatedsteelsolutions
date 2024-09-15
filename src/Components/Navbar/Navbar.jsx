@@ -39,7 +39,7 @@ const Navbar = () => {
             {/* <Link to="/contact" onClick={closeMenu}>
               Contact
             </Link> */}
-            <a href="#" className="navbar-link" >contact</a>
+            <a href="#contact" className="navbar-link" >contact</a>
           </li>
           <li className="navbar-item">
             <a href="https://example.com" className="navbar-button" onClick={closeMenu}>

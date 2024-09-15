@@ -1,6 +1,7 @@
 import React from "react";
 import { ServicesData } from "../../../../assets/assets";
 import "./Services.css";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
@@ -13,9 +14,9 @@ const Services = () => {
             <h6>{item.heading}</h6>
             <h4>{item.title}</h4>
             <p>{item.description}</p>
-            <a href="#" className="btn btn-primary">
-              {item.Link}
-            </a>
+            <Link to={item.Link} className="btn btn-primary">
+              {item.buttonText}
+            </Link>
           </div>
         ))}
       </div>
