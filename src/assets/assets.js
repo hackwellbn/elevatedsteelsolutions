@@ -1,8 +1,11 @@
-import { Link } from "react-router-dom";
 import image1 from "./image1.jpg";
 import image2 from "./image2.jpeg";
 import image3 from "./image3.jpg";
-
+import Production1 from "./IMG-20240917-WA0012.jpg";
+import Production2 from "./IMG-20240917-WA0013.jpg";
+import Production3 from "./IMG-20240917-WA0014.jpg";
+import Production4 from './IMG-20240917-WA0015.jpg';
+import Production5 from "./IMG-20240917-WA0016.jpg";
 export const assets = [
   {
     image: image1,
@@ -28,7 +31,7 @@ export const ServicesData = [
     image: image2,
     heading: "Your Vision, Our Expertise",
     Link: "#/contact",
-    buttonText: "Contact,"
+    buttonText: "Contact,",
   },
   {
     title: "Innovative Welding Techniques",
@@ -39,4 +42,20 @@ export const ServicesData = [
     Link: "/About",
     buttonText: "Learn More",
   },
+];
+
+export const ProductionData = [
+  {
+    image: Production1,
+  },
+  {
+    image: Production2,
+  },
+  {
+    image: Production3,
+  },{
+    image: Production4,
+  },{
+    image: Production5,
+  }
 ];

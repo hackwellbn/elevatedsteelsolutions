@@ -8,6 +8,7 @@ import PrivacyPolicy from './Pages/PrivacyPolicy/PrivacyPolicy';
 import About from './Pages/About/About';
 import TermsOfService from './Pages/TermsOfService/TermsOfService';
 import Services from './Pages/Services/Services';
+import Production from './Pages/Production/Production';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/Privacy" element={<PrivacyPolicy />} />
           <Route path="/Terms" element={<TermsOfService />} />
+          <Route path="/production" element={<Production />} />
         
           {/* Add more routes here as needed */}
         </Routes>

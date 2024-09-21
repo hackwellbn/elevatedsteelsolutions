@@ -126,3 +126,19 @@
     }
   }
   
+  .service-container{
+    position: relative;
+  }
+  .nav-container{
+    width: 8em;
+    height: 8em;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    margin: auto;
+    z-index: 1;
+  }

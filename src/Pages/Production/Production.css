@@ -1,0 +1,183 @@
+/* Production Component Styles */
+.production {
+    padding: 2rem;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 60%;
+    margin: auto;
+  }
+  
+  .production h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--bg-btn-color);
+  }
+  
+  .production h4,
+  .production h6 {
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+  }
+  
+  .overview {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    /* background-color: var(--bx-color); */
+    border-left: 5px solid var(--bg-btn-color);
+  }
+  
+  .production ul {
+    list-style-type: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+    color: var(--text-color);
+  }
+  
+  .production ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .step-container {
+    /* background-color: var(--bx-color); */
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  
+  .step-container h2 {
+    font-size: 1.5rem;
+    color: var(--bg-btn-color);
+    margin-bottom: 1rem;
+  }
+  
+  .step-container p {
+    line-height: 1.6; /* Good text spacing */
+    margin-bottom: 10px;
+  }
+  
+  .step-container picture {
+    margin-top: 3rem;
+  }
+  
+  /* Hoverable Image Container */
+  .step-container .image-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto; /* Center the images */
+  }
+  
+  .step-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--bg-btn-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Gradient Overlay */
+  .step-container .image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 138, 144, 0.1), rgba(0, 138, 144, 0.9)); /* Customize gradient color */
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 8px;
+  }
+  
+  /* Caption Message */
+  .step-container .caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+  
+  /* Hover Effect */
+  .step-container .image-container:hover::before {
+    opacity: 1;
+  }
+  
+  .step-container .image-container:hover .caption {
+    opacity: 1;
+  }
+  
+  /* Step number styling */
+  .step-container span {
+    display: block;
+    background-color: var(--bg-btn-color);
+    color: var(--text-color);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* For tablets and smaller devices */
+  @media (max-width: 768px) {
+    .production {
+      width: 90%; /* Adjust the width for smaller screens */
+      padding: 1.5rem;
+    }
+  
+    .production h2 {
+      font-size: 1.75rem; /* Smaller font size for headings */
+    }
+  
+    .step-container h2 {
+      font-size: 1.25rem;
+    }
+  
+    .step-container .image-container {
+      width: 100%; /* Images take full width on smaller screens */
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .production {
+      width: 100%; /* Full width on very small screens */
+      padding: 1rem;
+    }
+  
+    .production h2 {
+      font-size: 1.5rem;
+    }
+  
+    .step-container h2 {
+      font-size: 1rem;
+    }
+  
+    .step-container .image-container {
+      width: 100%; /* Keep images full width */
+    }
+  
+    .step-container span {
+      width: 30px;
+      height: 30px;
+      font-size: 1rem;
+      line-height: 30px;
+    }
+  }
+  
