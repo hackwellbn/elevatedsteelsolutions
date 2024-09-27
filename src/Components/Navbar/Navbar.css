@@ -130,6 +130,7 @@
     position: relative;
   }
   .nav-container{
+    display:none;
     width: 8em;
     height: 8em;
     border: 1px solid #ccc;
