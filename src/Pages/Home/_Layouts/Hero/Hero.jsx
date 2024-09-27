@@ -16,7 +16,7 @@ const Hero = () => {
           highest standards.
         </p>
         <div className="link-container">
-          <Link to="#/quote" className="navbar-button ">Request a Quote</Link>
+          <Link to="/production" className="navbar-button ">production</Link>
           <Link to="/about" >Learn More About Us</Link>
         </div>
       </div>
