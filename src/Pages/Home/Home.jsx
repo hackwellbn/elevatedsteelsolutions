@@ -5,6 +5,7 @@ import Testimonials from "./_Layouts/Testimonials/Testimonials";
 import Process from "./_Layouts/Process/Process";
 import Services from "./_Layouts/Services/Services";
 import Counter from "./_Layouts/Counter/Counter";
+import Gallery from "./_Layouts/Gallery/Gallery";
 const Home = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const Home = () => {
       <Counter />
       <Services />
       <Process />
+      <Gallery />
       <Testimonials />
       <ContactForm />
     </div>

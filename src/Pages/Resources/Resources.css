@@ -1,0 +1,44 @@
+/* styles.css */
+.video-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between videos */
+    margin: auto;
+  }
+  
+  .video-container {
+    width: 400px; /* Fixed width */
+    height: calc(400px * 9 / 16); /* Height for 16:9 aspect ratio */
+    max-height: calc(400px * 9 / 16); /* Ensure it doesn't exceed 16:9 ratio */
+    background-color: #222831; /* Your background color */
+    border-radius: 10px;
+    overflow: hidden; /* For rounded corners */
+    position: relative; /* Positioning context for the aspect ratio */
+  }
+  
+  video {
+    position: absolute; /* Position the video absolutely within the container */
+    top: 0; /* Align the video to the top */
+    left: 0; /* Align the video to the left */
+    width: 100%; /* Make the video fill the container */
+    height: 100%; /* Make the video fill the container */
+    object-fit: cover; /* Cover the container while preserving aspect ratio */
+    border-radius: 10px; /* Optional: for rounded corners */
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) { /* Medium screens (md) */
+    .video-container {
+      width: 300px; /* Adjusted width for smaller screens */
+      height: calc(300px * 9 / 16); /* Maintain 16:9 aspect ratio */
+    }
+  }
+  
+  @media (max-width: 480px) { /* Small screens (sm) */
+    .video-container {
+      width: 200px; /* Further adjusted width for very small screens */
+      height: calc(200px * 9 / 16); /* Maintain 16:9 aspect ratio */
+    }
+  }
+  

@@ -59,6 +59,15 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
+  const handleScrollToContact = (event) => {
+    event.preventDefault(); // Prevent default anchor click behavior
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" }); // Smooth scroll
+    }
+    closeMenu(); // Close the menu after scrolling
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
@@ -85,7 +94,11 @@ const Navbar = () => {
             <Dropdown closeMenu={closeMenu} />
           </li>
           <li className="navbar-item">
-            <a href="#contact" className="navbar-link">
+            <a
+              href="#contact"
+              className="navbar-link"
+              onClick={handleScrollToContact} // Use handleScrollToContact here
+            >
               Contact
             </a>
           </li>

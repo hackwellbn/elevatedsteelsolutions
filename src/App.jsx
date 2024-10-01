@@ -9,6 +9,7 @@ import About from './Pages/About/About';
 import TermsOfService from './Pages/TermsOfService/TermsOfService';
 import Services from './Pages/Services/Services';
 import Production from './Pages/Production/Production';
+import Resources from './Pages/Resources/Resources';
 
 const App = () => {
   return (
@@ -22,7 +23,7 @@ const App = () => {
           <Route path="/Privacy" element={<PrivacyPolicy />} />
           <Route path="/Terms" element={<TermsOfService />} />
           <Route path="/production" element={<Production />} />
-        
+          <Route path="/resources" element={<Resources />} />
           {/* Add more routes here as needed */}
         </Routes>
         <Footer />
