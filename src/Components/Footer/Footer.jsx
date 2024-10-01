@@ -17,7 +17,7 @@ const Footer = () => {
     setResult("Sending....");
     const formData = new FormData(event.target);
 
-    formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+    formData.append("access_key", "826975f0-f71f-4282-a849-0dff6055e6c3");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
