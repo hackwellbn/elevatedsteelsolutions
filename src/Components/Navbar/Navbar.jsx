@@ -33,18 +33,20 @@ const Dropdown = ({ closeMenu }) => {
   }, [isOpen]);
 
   return (
-    <div className="nav-container" ref={dropdownRef}>
+    <div className="service-container" ref={dropdownRef}>
       <button className="dropdown-toggle" onClick={toggleDropdown}>
         Services
       </button>
       {isOpen && (
-        <div className="dropdown-menu">
-          <Link to="/production" className="navbar-link" onClick={closeMenu}>
-            Production
-          </Link>
-          <Link to="/resources" className="navbar-link" onClick={closeMenu}>
-            Resources
-          </Link>
+        <div className="nav-container">
+          <div className="dropdown-menu">
+            <Link to="/production" className="navbar-link" onClick={closeMenu}>
+              Production
+            </Link>
+            <Link to="/resources" className="navbar-link" onClick={closeMenu}>
+              Resources
+            </Link>
+          </div>
         </div>
       )}
     </div>

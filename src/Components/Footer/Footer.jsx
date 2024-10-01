@@ -68,7 +68,7 @@ const Footer = () => {
             <div className="footer-links">
               <div>
                 {" "}
-                <Link to="/">elevatedsteelsolution@gmail.com</Link>
+                <Link to="/">contact@elevatedsteelsolution.online</Link>
               </div>
               <div>
                 Luckysummer ward,Ruaraka
