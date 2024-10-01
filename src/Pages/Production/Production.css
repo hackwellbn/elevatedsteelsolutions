@@ -23,7 +23,6 @@
   .overview {
     margin-bottom: 2rem;
     padding: 1rem;
-    /* background-color: var(--bx-color); */
     border-left: 5px solid var(--bg-btn-color);
   }
   
@@ -45,7 +44,6 @@
   }
   
   .step-container {
-    /* background-color: var(--bx-color); */
     padding: 1.5rem;
     border-radius: 8px;
   }
@@ -61,15 +59,11 @@
     margin-bottom: 10px;
   }
   
-  .step-container picture {
-    margin-top: 3rem;
-  }
-  
-  /* Hoverable Image Container */
   .step-container .image-container {
     position: relative;
     width: 80%;
     margin: 0 auto; /* Center the images */
+    overflow: hidden;
   }
   
   .step-container img {
@@ -90,10 +84,11 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, rgba(0, 138, 144, 0.1), rgba(0, 138, 144, 0.9)); /* Customize gradient color */
+    background: linear-gradient(180deg, rgba(0, 138, 144, 0.1), rgba(0, 138, 144, 0.9)); /* Gradient color */
     opacity: 0;
     transition: opacity 0.4s ease;
     border-radius: 8px;
+    z-index: 1;
   }
   
   /* Caption Message */
@@ -106,6 +101,7 @@
     font-weight: 600;
     opacity: 0;
     transition: opacity 0.4s ease;
+    z-index: 2;
   }
   
   /* Hover Effect */
