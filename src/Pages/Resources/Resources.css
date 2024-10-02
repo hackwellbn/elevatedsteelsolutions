@@ -1,4 +1,11 @@
 /* styles.css */
+.gallery{
+  text-align: center;
+  margin-bottom: 10px;
+  color: var(--text-color);
+  margin-top: 10px;
+}
+
 .video-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -7,6 +14,7 @@
   margin: auto;
   text-align: center;
   color: var(--text-color);
+  font: 2.5em sans-serif;
  
 }
 
@@ -34,14 +42,14 @@ video {
 /* Media Queries */
 @media (max-width: 768px) { /* Medium screens (md) */
   .video-container {
-    width: 300px; /* Adjusted width for smaller screens */
+    width: 400px; /* Adjusted width for smaller screens */
     height: calc(300px * 9 / 16); /* Maintain 16:9 aspect ratio */
   }
 }
 
 @media (max-width: 480px) { /* Small screens (sm) */
   .video-container {
-    width: 200px; /* Further adjusted width for very small screens */
-    height: calc(200px * 9 / 16); /* Maintain 16:9 aspect ratio */
+    width: 300px; /* Further adjusted width for very small screens */
+    height: calc(300px * 9 / 16); /* Maintain 16:9 aspect ratio */
   }
 }
