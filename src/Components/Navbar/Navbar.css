@@ -1,9 +1,12 @@
 /* Navbar Styles */
 .navbar {
-  background-color: #282c34; /* Dark background color */
+  /* background-color: #282c34; Dark background color */
+  background-color: hsla(220, 13%, 18%, 0.4);
   padding: 20px 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
+  backdrop-filter: blur(50px);
+  position: fixed;
+  width: 100%;
   z-index: 10;
 }
 
@@ -105,7 +108,8 @@
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #282c34;
+    background-color: hsla(220, 13%, 18%, 0.4);
+    backdrop-filter: blur(50px);
     width: 100vw;
     height: 100vh;
     padding: 20px;
@@ -171,7 +175,8 @@
       position: fixed;
       top: 0;
       right: 0;
-      background-color: #282c34;
+      background-color: hsla(220, 13%, 18%, 0.9);
+      backdrop-filter: blur(50px);
       width: 100vw;
       height: 100vh;
       padding: 20px;
