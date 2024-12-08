@@ -4,10 +4,14 @@ import image3 from "./image3.jpg";
 import Production1 from "./IMG-20240917-WA0012.jpg";
 import Production2 from "./IMG-20240917-WA0013.jpg";
 import Production3 from "./IMG-20240917-WA0014.jpg";
-import Production4 from './IMG-20240917-WA0015.jpg';
+import Production4 from "./IMG-20240917-WA0015.jpg";
 import Production5 from "./IMG-20240917-WA0016.jpg";
+import Logo from "./logo2.jpeg";
+
+
 export const assets = [
   {
+    Logo,
     image: image1,
     title: "Image 4",
     description: "This is the fourth image in the gallery.",
@@ -53,9 +57,11 @@ export const ProductionData = [
   },
   {
     image: Production3,
-  },{
+  },
+  {
     image: Production4,
-  },{
+  },
+  {
     image: Production5,
-  }
+  },
 ];

@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import SignupPopup from "../SignupPopup/SignupPopup";
+import { assets } from "../../assets/assets";
 
 const Dropdown = ({ closeMenu }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +73,7 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          Elevated Steel Solutions
+          <img src={assets[0].Logo} alt="" />
         </Link>
         <div className="navbar-toggle" onClick={toggleMenu}>
           <span className="navbar-toggle-icon"></span>
