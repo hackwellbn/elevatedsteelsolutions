@@ -12,6 +12,7 @@ import Production from './Pages/Production/Production';
 import Resources from './Pages/Resources/Resources';
 import Contact from './Pages/Contact/Contact';
 import SignupPopup from './Components/SignupPopup/SignupPopup';
+import { Helmet } from 'react-helmet';
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -27,6 +28,12 @@ const App = () => {
   return (
     <Router>
       <div>
+        <Helmet>
+          <title>Elevated Steel Solutions</title>
+          <meta name="description" content="Elevated Steel Solutions is a renowned welding and fabrication company specializing in high-quality products." />
+          <meta property="og:title" content="Elevated Steel Solutions" />
+          {/* Add more meta tags here as needed */}
+        </Helmet>
         <Navbar />
         <ScrollToTop /> {/* Ensure ScrollToTop is used here */}
         <Routes>
