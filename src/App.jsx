@@ -11,6 +11,7 @@ import Services from './Pages/Services/Services';
 import Production from './Pages/Production/Production';
 import Resources from './Pages/Resources/Resources';
 import Contact from './Pages/Contact/Contact';
+import SignupPopup from './Components/SignupPopup/SignupPopup';
 
 const ScrollToTop = () => {
   const location = useLocation();
@@ -37,6 +38,7 @@ const App = () => {
           <Route path="/production" element={<Production />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/signup" element={<SignupPopup />} />
           {/* Add more routes here as needed */}
         </Routes>
         <Footer />

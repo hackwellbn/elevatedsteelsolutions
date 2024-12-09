@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import SignupPopup from "../SignupPopup/SignupPopup";
 import { assets } from "../../assets/assets";
 
 const Dropdown = ({ closeMenu }) => {
@@ -92,19 +91,18 @@ const Navbar = () => {
             </Link>
           </li>
           <li className="navbar-item">
-            <Dropdown closeMenu={closeMenu} />
-          </li>
-          <li className="navbar-item">
-            <Link
-              to="/contact"
-              className="navbar-link"
-              onClick={handleScrollToContact} // Use handleScrollToContact here
-            >
-              Contact
+            <Link to="/contact" className="navbar-link" onClick={closeMenu}>
+              contact
             </Link>
           </li>
           <li className="navbar-item">
-            <SignupPopup />
+            <Dropdown closeMenu={closeMenu} />
+          </li>
+      
+          <li className="navbar-item">
+            <Link to="/signup" className="btn-signup " onClick={closeMenu}>
+              signup
+            </Link>
           </li>
           <li className="navbar-item">
             <button className="navbar-close" onClick={closeMenu}>
