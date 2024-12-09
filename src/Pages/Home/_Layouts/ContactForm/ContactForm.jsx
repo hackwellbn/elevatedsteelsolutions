@@ -33,7 +33,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contactform" id="contact">
+    <div className="contactform">
       <div className="contactform-body">
         <img src={assets[0].image} alt="Background" />
       </div>

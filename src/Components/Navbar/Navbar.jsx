@@ -95,13 +95,13 @@ const Navbar = () => {
             <Dropdown closeMenu={closeMenu} />
           </li>
           <li className="navbar-item">
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className="navbar-link"
               onClick={handleScrollToContact} // Use handleScrollToContact here
             >
               Contact
-            </a>
+            </Link>
           </li>
           <li className="navbar-item">
             <SignupPopup />

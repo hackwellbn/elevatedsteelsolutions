@@ -1,5 +1,5 @@
-import React from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom'; // Use BrowserRouter
 import Navbar from './Components/Navbar/Navbar';
 import './App.css';
 import Footer from './Components/Footer/Footer';
@@ -10,12 +10,24 @@ import TermsOfService from './Pages/TermsOfService/TermsOfService';
 import Services from './Pages/Services/Services';
 import Production from './Pages/Production/Production';
 import Resources from './Pages/Resources/Resources';
+import Contact from './Pages/Contact/Contact';
+
+const ScrollToTop = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll to the top of the page on route change
+  }, [location]);
+
+  return null;
+};
 
 const App = () => {
   return (
     <Router>
       <div>
         <Navbar />
+        <ScrollToTop /> {/* Ensure ScrollToTop is used here */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -24,6 +36,7 @@ const App = () => {
           <Route path="/Terms" element={<TermsOfService />} />
           <Route path="/production" element={<Production />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/contact" element={<Contact />} />
           {/* Add more routes here as needed */}
         </Routes>
         <Footer />
