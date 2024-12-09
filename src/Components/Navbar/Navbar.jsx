@@ -31,6 +31,7 @@ const Dropdown = ({ closeMenu }) => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, [isOpen]);
+  
 
   return (
     <div className="service-container" ref={dropdownRef}>
@@ -45,6 +46,9 @@ const Dropdown = ({ closeMenu }) => {
             </Link>
             <Link to="/resources" className="navbar-link" onClick={closeMenu}>
               Resources
+            </Link>
+            <Link to="/gallery" className="navbar-link" onClick={closeMenu}>
+              Gallery
             </Link>
           </div>
         </div>
